@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Supplier.SupplierInput">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:text="Nama Supplier"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/txtNamaSupplier"
+            android:layout_below="@+id/textView"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nama Supplier" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_below="@id/txtNamaSupplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Alamat Supplier"
+            android:textSize="15dp"
+            android:maxLength="50"/>
+
+        <EditText
+            android:id="@+id/txtAlamatSuppliier"
+            android:layout_below="@+id/textView2"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Alamat Supplier"
+            android:maxLength="50"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/txtAlamatSuppliier"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="No. Telp Supplier"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/txtNoTelpSupplier"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:hint="No. Telp Supplier"
+            android:inputType="number"
+            android:maxLength="12"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_below="@id/txtNoTelpSupplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Nama Sales"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/txtNamaSales"
+            android:layout_below="@+id/textView4"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nama Sales"
+            android:maxLength="50"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_below="@id/txtNamaSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="No. Telp Sales"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/txtNoTelpSales"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:hint="No. Telp Sales"
+            android:inputType="number"
+            android:maxLength="12"/>
+
+        <Button
+            android:id="@+id/input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNoTelpSales"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="INPUT" />
+
+    </RelativeLayout>
+
+</FrameLayout>

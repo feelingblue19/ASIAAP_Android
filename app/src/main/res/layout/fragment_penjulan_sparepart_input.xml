@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PenjualanSparepart.PenjulanSparepartInput"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Nama Customer"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/customer"
+                android:layout_width="280dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/textView1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Nama Customer" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_below="@id/customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="No. Telp Customer"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/no_telp"
+                android:layout_below="@+id/textView2"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="No. Telp Customer"
+                android:maxLength="12"/>
+
+            <TextView
+                android:id="@+id/tvSparepart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/no_telp"
+                android:text="Data Sparepart"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_below="@id/tvSparepart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Sparepart"
+                android:textSize="15dp"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sparepart"
+                android:layout_below="@id/textView3"
+                android:layout_marginTop="2dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_below="@id/sparepart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Jumlah"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/jumlah"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:hint="Jumlah Sparepart"
+                android:inputType="number"
+                android:maxLength="50"/>
+
+            <Button
+                android:id="@+id/btnTambahSparepart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jumlah"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="INPUT SPAREPART" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/btnTambahSparepart"
+                android:layout_margin="10dp"
+                android:id="@+id/recycler_view_detailspr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:scrollbars="vertical" />
+
+            <Button
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycler_view_detailspr"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:text="INPUT" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</ScrollView>
+

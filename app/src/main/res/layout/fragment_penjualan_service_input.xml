@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PenjualanService.PenjualanServiceInput"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Nama Customer"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/customer"
+                android:layout_width="280dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/textView1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Nama Customer" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_below="@id/customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="No. Telp Customer"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/no_telp"
+                android:layout_below="@+id/textView2"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="No. Telp Customer"
+                android:maxLength="12"/>
+
+            <TextView
+                android:id="@+id/tvKendaraan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/no_telp"
+                android:text="Kendaraan Customer"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_below="@id/tvKendaraan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Tipe Kendaraan"
+                android:textSize="15dp"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/tipe"
+                android:layout_below="@id/textView3"
+                android:layout_marginTop="2dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_below="@id/tipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="No. Polisi"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/nopol"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:hint="Nomor Polisi"
+                android:maxLength="50"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_below="@id/nopol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Montir"
+                android:textSize="15dp"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/montir"
+                android:layout_below="@id/textView5"
+                android:layout_marginTop="2dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/btnTambahKendaraan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/montir"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="TAMBAH KENDARAAN" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/btnTambahKendaraan"
+                android:layout_margin="10dp"
+                android:id="@+id/recycler_view_kendaraan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/tvService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/recycler_view_kendaraan"
+                android:text="Data Service"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_below="@id/tvService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Motor"
+                android:textSize="15dp"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/motor"
+                android:layout_below="@id/textView6"
+                android:layout_marginTop="2dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_below="@id/motor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Jasa Service"
+                android:textSize="15dp"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/service"
+                android:layout_below="@id/textView7"
+                android:layout_marginTop="2dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/btnTambahService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/service"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="INPUT SERVICE" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/btnTambahService"
+                android:layout_margin="10dp"
+                android:id="@+id/recycler_view_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:scrollbars="vertical" />
+
+            <Button
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycler_view_service"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:text="INPUT" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</ScrollView>
+
+
+

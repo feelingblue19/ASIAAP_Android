@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fab_service" type="id" />
+    <item name="fab_sparepart" type="id" />
+    <item name="fab_service_sparepart" type="id" />
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".InformasiBengkelFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       
+       <ImageView
+           android:src="@drawable/philips"
+           android:layout_marginTop="20dp"
+           android:layout_width="75dp"
+           android:layout_height="75dp"
+           android:layout_gravity="center"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="100dp"
+           android:text='Pak Philips, merupakan pemilik sekaligus pendiri bengkel Atma Auto. Dengan mottonya "Customer adalah Raja", tidak henti-hentinya ia mendapatkan kepercayaan dari para customer sehingga bengkel Atma Auto dapat berdiri hingga saat ini. ' 
+           android:gravity="center"
+           android:textSize="15dp"/>
+
+       <ImageView
+           android:src="@drawable/quality"
+           android:layout_marginTop="30dp"
+           android:layout_width="75dp"
+           android:layout_height="75dp"
+           android:layout_gravity="center"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="125dp"
+           android:text="
+Quality over quantity, telah menjadi prioritas utama bengkel Atma Auto untuk mempertahankan kualitasnya. Meskipun kualitas merupakan yang pertama, bukan berarti barang yang ada di bengkel Atma Auto tidak lengkap. Terbukti dari histori penjualan sparepart bengkel Atma Auto, 99.5% customer menemukan sparepart yang dicarinya.
+"
+           android:gravity="center"
+           android:textSize="15dp"/>
+
+       <ImageView
+           android:src="@drawable/contactus"
+           android:layout_marginTop="30dp"
+           android:layout_width="75dp"
+           android:layout_height="75dp"
+           android:layout_gravity="center"/>
+
+       <TextView
+           android:layout_marginTop="10dp"
+           android:layout_width="wrap_content"
+           android:maxLines="10"
+           android:layout_height="wrap_content"
+           android:text="Customer Service: +62-859-5555-xxxx \n Pre-Order Sparepart: +62-838-5555-xxxx \n Lowongan Kerja: +62-878-5555-xxxx \n On-The-Way Service: +62-859-5555-xxxx "
+           android:layout_gravity="center"
+           android:textSize="15dp"/>
+
+
+   </LinearLayout>
+    </FrameLayout>
+
+</ScrollView>
+

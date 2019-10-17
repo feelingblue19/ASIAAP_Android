@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Sparepart.SparepartInput"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_below="@id/satuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Letak"
+            android:textSize="15dp"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinnerLetak"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/textView1"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_below="@id/spinnerLetak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Penempatan"
+            android:textSize="15dp"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinnerRuang"
+            android:layout_below="@id/textView2"
+            android:layout_marginTop="2dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_below="@id/spinnerRuang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Nama Sparepart"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/txtNamaSparepart"
+            android:layout_below="@+id/textView3"
+            android:layout_width="280dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nama Sparepart" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_below="@id/txtNamaSparepart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Merk Sparepart"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/txtMerkSparepart"
+            android:layout_below="@+id/textView4"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Merk Sparepart"
+            android:maxLength="50"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_below="@id/txtMerkSparepart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Tipe Sparepart"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/txtTipeSparepart"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:hint="Tipe Sparepart"
+            android:inputType="textPersonName"
+            android:maxLength="50"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_below="@id/txtTipeSparepart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Harga Jual Sparepart"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/txtHargaJualSparepart"
+            android:layout_below="@+id/textView6"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Harga Jual Sparepart" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_below="@id/txtHargaJualSparepart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Harga Beli Sparepart"
+            android:textSize="15dp"/>
+
+
+        <EditText
+            android:id="@+id/txtHargaBeliSparepart"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:hint="Harga Beli Sparepart"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_below="@id/txtHargaBeliSparepart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Stok Sparepart"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/txtStokSparepart"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:hint="Stok Sparepart"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_below="@id/txtStokSparepart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Min. Stok Sparepart"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/txtMinStokSparepart"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:hint="Min Stok Sparepart"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnGambarSparepart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtMinStokSparepart"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="TAMBAH GAMBAR" />
+
+        <ImageView
+            android:id="@+id/ivGambarSparepart"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_below="@id/btnGambarSparepart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_below="@id/ivGambarSparepart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Kecocokan"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_below="@id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Tipe Motor"
+            android:textSize="15dp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinnerTipe"
+            android:layout_marginTop="2dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textView11"/>
+
+        <Button
+            android:id="@+id/btnTambahTipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerTipe"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="TAMBAH KECOCOKAN" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/btnTambahTipe"
+            android:layout_margin="10dp"
+            android:id="@+id/recycler_view_tipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recycler_view_tipe"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="INPUT" />
+
+    </RelativeLayout>
+
+</FrameLayout>
+</ScrollView>

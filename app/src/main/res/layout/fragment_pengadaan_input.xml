@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pengadaan.PengadaanInput">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:text="Supplier"
+            android:textSize="15dp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinnerSupplier"
+            android:layout_marginTop="2dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textView"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_below="@id/spinnerSupplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Detail Sparepart"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_below="@id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Sparepart"
+            android:textSize="15dp"
+            android:maxLength="50"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinnerSparepart"
+            android:layout_marginTop="2dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textView2"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/spinnerSparepart"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Jumlah"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/jumlah"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:hint="Jumlah Sparepart"
+            android:inputType="number"
+            android:maxLength="12"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_below="@id/jumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Satuan"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/satuan"
+            android:layout_below="@+id/textView4"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:digits="qwertyuiopasdfghjklzxcvbnm QWERTYUIOPASDFGHJKLZXCVBNM"
+            android:inputType="textPersonName"
+            android:hint="Satuan Sparepart"
+            android:maxLength="50"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_below="@id/satuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Harga"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/harga"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:hint="Harga Sparepart"
+            android:inputType="number"
+            android:maxLength="12" />
+
+        <Button
+            android:id="@+id/tambahSparepart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/harga"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="Tambah Sparepart" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/tambahSparepart"
+            android:layout_margin="20dp"
+            android:id="@+id/recycler_view_sparepart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recycler_view_sparepart"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="INPUT" />
+
+    </RelativeLayout>
+
+    </FrameLayout>
+
+</ScrollView>
